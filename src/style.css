@@ -1,0 +1,27 @@
+/* 見た目だけを設定します。ログインの動作はmain.tsxにあります。 */
+body {
+  margin: 0;
+  padding: 24px;
+  font-family: sans-serif;
+  color: #243047;
+  background: #f5f6fa;
+}
+
+main {
+  max-width: 360px;
+  margin: 40px auto;
+  padding: 24px;
+  background: white;
+  border-radius: 12px;
+}
+
+h1 { font-size: 24px; }
+p { font-size: 14px; line-height: 1.8; }
+form { display: flex; flex-direction: column; gap: 12px; }
+input, button { padding: 12px; font: inherit; border-radius: 6px; }
+input { min-width: 0; border: 1px solid #abb4c5; }
+button { border: none; background: #4359c7; color: white; cursor: pointer; }
+button:disabled { background: #e4e7ed; color: #626b7b; cursor: default; }
+input:disabled { background: #f0f1f4; }
+.error { color: #b42338; }
+:focus-visible { outline: 3px solid #8c9cf3; outline-offset: 3px; }
